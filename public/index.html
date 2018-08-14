@@ -13,7 +13,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" /> 
-    <link rel="stylesheet" href="/styles/new-tweets.css" type="text/css" /> 
+    <link rel="stylesheet" href="/styles/new-tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/posted-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -41,6 +42,17 @@
             <input type="submit" value="Tweet">
             <span class="counter">140</span>
           </form>
+        </section>
+        <section id = "tweet-container">
+          <article>
+            <header>
+              <img width="50px" src = "https://pbs.twimg.com/profile_images/986787329816739840/-B_0s40F_400x400.jpg">
+              <span>Full Name</span>
+              <span>@username</span>
+            </header>
+              <textarea>This is a really good tweet!</textarea>
+            <footer>10 days ago </footer>
+          </article>
         </section>
     </main>
   </body>
