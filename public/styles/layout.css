@@ -26,7 +26,6 @@ body {
   text-align: left;
   background-color: white;
   color: black;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-top:150px;
 }
