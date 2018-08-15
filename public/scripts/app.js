@@ -58,7 +58,6 @@ function tweetAgeCalc(tweetData) {
   a tweet <article> element containing 
   the HTML of the tweet
 */
-
 function renderTweets(tweets) {
     tweets.forEach(function(tweet){
        var html = createTweetElement(tweet);
@@ -89,6 +88,19 @@ function createTweetElement(tweetData) {
     return article;
 }
 
+
 $(function(){    
-    renderTweets(data);
+
+ // $('form#new-product').on('submit', function(e){}
+  $('form#new-tweet').on("submit", function(event){
+    event.preventDefault();
+    let serialized = $(this).serialize();
+
+    $.post('/tweets', serialized).done(function(product){
+        console.log("success")
+    })
+    
+  })
+
+  renderTweets(data);
 })
