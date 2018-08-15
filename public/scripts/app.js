@@ -47,11 +47,18 @@ $(document).ready(function() {
   //When user submits, posts content to the route with jQuery.
   $('form#new-tweet').on("submit", function(event){
     event.preventDefault();
-    let serialized = $(this).serialize();
 
-    $.post('/tweets', serialized).done(function(product){
-        console.log("success")
-    })
+    if($("form#new-tweet textarea").val() === ""){
+      alert("You can't tweet nothing!")
+    } else if ($("form#new-tweet textarea").val().length > 140){
+      alert("Your tweet must be 140 characters or less")
+    } else {
+      let serialized = $(this).serialize();
+      $.post('/tweets', serialized).done(function(product){
+          console.log("success")
+      })
+    }
+
     
   });
 
