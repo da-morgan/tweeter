@@ -79,9 +79,9 @@ function createTweetElement(tweetData) {
 
     icons.appendTo(footer);
     dateTime.appendTo(footer);
+    img.appendTo(header);
     uNameSpan.appendTo(header);
     nameSpan.appendTo(header);
-    img.appendTo(header);
     header.appendTo(article);
     paragraph.appendTo(article);
     footer.appendTo(article);

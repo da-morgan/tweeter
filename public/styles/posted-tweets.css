@@ -1,4 +1,4 @@
-#tweet-container {
+#tweet-container article {
     border: solid;
     border-width: thin;
     border-radius: 1rem;
@@ -12,17 +12,15 @@
     border-width: 2px;
 }
 
-#tweet-container .icons {
+article .icons {
     display: none;
 }
 
-#tweet-container:hover .icons {
-    display: inline-block;
+article:hover .icons {
     float: right;
 }
 
 #tweet-container footer span {
-    float: left;
     margin: 10px;
     border: none;
 }
@@ -49,7 +47,11 @@
     font-weight: bold;
     float: left;
     margin-top: 20px;
-    font-size: 125%;
+    font-size: 140%;
+}
+
+#tweet-container img {
+    float: left;
 }
 
 #tweet-container .username {
