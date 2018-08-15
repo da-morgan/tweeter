@@ -14,7 +14,7 @@ function tweetAgeCalc(tweetData) {
 function renderTweets(tweets) {
     tweets.forEach(function(tweet){
        var html = createTweetElement(tweet);
-       $('#tweet-container').append(html);
+       $('#tweet-container').prepend(html);
     })
 }
 
@@ -55,18 +55,21 @@ $(document).ready(function() {
     } else {
       let serialized = $(this).serialize();
       $.post('/tweets', serialized).done(function(product){
-          console.log("success")
-      })
+          $("form#new-tweet textarea").val("")
+          $("form#new-tweet span").text("140")
+          loadTweets();
+      });
     }
-
     
   });
 
   //Loads tweets through AJAX
   function loadTweets() {
     $.ajax('/tweets', { method: 'GET' }).then(function(data){
+      $("article").remove();
       renderTweets(data);
-    }) 
+    })
+    
   }
   loadTweets();
   
