@@ -6,14 +6,25 @@
     margin-right: 2rem;
     margin-top: 1rem;
     height: 210px;
+}
 
+#tweet-container:hover {
+    border-width: 2px;
+}
+
+#tweet-container .icons {
+    display: none;
+}
+
+#tweet-container:hover .icons {
+    display: inline-block;
+    float: right;
 }
 
 #tweet-container footer span {
     float: left;
     margin: 10px;
     border: none;
-
 }
 
 #tweet-container .profile-image {
@@ -23,11 +34,15 @@
 }
 
 #tweet-container header {
-    background-color: paleturquoise;
+    background-color: rgb(198, 198, 198);
     height: 60px;
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+#tweet-container:hover header {
+    background-color: rgb(176, 176, 176);
 }
 
 #tweet-container .name {
