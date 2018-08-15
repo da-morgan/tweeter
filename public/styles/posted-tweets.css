@@ -27,7 +27,7 @@
     border: none;
 }
 
-#tweet-container .profile-image {
+#tweet-container img {
     margin: 10px;
     width: 40px;
     float: left;
@@ -56,4 +56,9 @@
     float: right;
     margin: 10px;
     margin-top: 23px;
+}
+
+#tweet-container p {
+    margin: 10px;
+    height: 90px;
 }
