@@ -18,6 +18,7 @@ article .icons {
 
 article:hover .icons {
     float: right;
+    display: block; 
 }
 
 #tweet-container footer span {
