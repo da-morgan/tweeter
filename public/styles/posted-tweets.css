@@ -1,3 +1,44 @@
 #tweet-container {
-    background-color: palegreen;
+    border: solid;
+    border-width: thin;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    height: 210px;
+
+}
+
+#tweet-container footer span {
+    float: left;
+    margin: 10px;
+    border: none;
+
+}
+
+#tweet-container .profile-image {
+    margin: 10px;
+    width: 40px;
+    float: left;
+}
+
+#tweet-container header {
+    background-color: paleturquoise;
+    height: 60px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#tweet-container .name {
+    font-weight: bold;
+    float: left;
+    margin-top: 20px;
+    font-size: 125%;
+}
+
+#tweet-container .username {
+    float: right;
+    margin: 10px;
+    margin-top: 23px;
 }
