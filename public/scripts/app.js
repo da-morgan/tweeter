@@ -25,7 +25,7 @@ function createTweetElement(tweetData) {
     let img = $(`<img src= ${tweetData.user.avatars.small}>`)
     let nameSpan = $(`<span class="name">${tweetData.user.name}</span>`)
     let uNameSpan = $(`<span class="username">${tweetData.user.handle}</span>`)
-    let paragraph = $(`<p>${tweetData.content.text}</p>`)
+    let paragraph = $("<p>").text(`${tweetData.content.text}`)
     let dateTime = $(`<span class="date">${tweetAgeCalc(tweetData)} days ago. </span>`)
     let icons = $(`<span class="icons"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></span>`)
 
