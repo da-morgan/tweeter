@@ -39,3 +39,43 @@ span{
 span.negative {
   color: red;
 }
+
+#compose-button {
+  float: right;
+  border: solid;
+  border-color: black;
+  height: 70px;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 1rem;
+  border-width: thin;
+  background-color: white;
+}
+
+#compose-button:hover{
+  border-width: 2px;
+}
+
+#compose-button img {
+  float: left;
+  width: 30px;
+  margin-top: 6px;
+  opacity: 0.5;
+}
+
+#compose-button:hover img {
+  opacity: 1;
+}
+
+#compose-button p {
+  float: left;
+  font-size: 25px;
+  margin-top: 10px;
+  color: #00a087;
+  opacity: 0.5;
+}
+
+#compose-button:hover p {
+  opacity: 1;
+  color: black;
+}
