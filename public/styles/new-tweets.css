@@ -7,6 +7,10 @@
     padding: 1rem;
 }
 
+.new-tweet .hidden {
+    display: none;
+}
+
 h2 {
     border-bottom: 1px solid black;
 }
