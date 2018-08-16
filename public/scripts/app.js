@@ -49,14 +49,15 @@ $(document).ready(function() {
     event.preventDefault();
 
     if($("form#new-tweet textarea").val() === ""){
-      alert("You can't tweet nothing!")
+      $("main #error-message").text("You can't tweet nothing!").slideDown(400)
     } else if ($("form#new-tweet textarea").val().length > 140){
-      alert("Your tweet must be 140 characters or less")
+      $("main #error-message").text("Your tweet must be 140 characters or less").slideDown(400)
     } else {
       let serialized = $(this).serialize();
       $.post('/tweets', serialized).done(function(product){
           $("form#new-tweet textarea").val("")
           $("form#new-tweet span").text("140")
+          $("main #error-message").text("").slideUp(500)
           loadTweets();
       });
     }
