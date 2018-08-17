@@ -18,3 +18,9 @@ Users will be able to type tweets into the text area and post them
 - Body-parser
 - md5
 - Mongodb
+
+## Screenshots
+
+!["Screenshot of full Tweeter app"](https://github.com/da-morgan/tweeter/blob/master/docs/Tweeter.png)
+
+!["Screenshot Tweeter App showing user error messages"](https://github.com/da-morgan/tweeter/blob/master/docs/Not-So-Fast.png)
